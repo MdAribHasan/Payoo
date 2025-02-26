@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo-Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-slate-800 text-black ">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg bg-gray-200">
+        <header>
+            <nav class="flex justify-around items-center">
+                <img class="w-16" src="./assets/Group.png">
+                <div>
+                    <h1 class="text-3xl text-black font-bold">
+                        $4500
+                    </h1>
+                    <p class="border-pink-600 rounded-md p-1 text-black">Available Balance</p>
+                </div>
+                <button class="btn">Logout</button>
+            </nav>
+            <section class="mt-10">
+                <h1 class="text-2xl font-bold mb-2 ml-3">Welcome To Payoo</h1>
+                <p class="ml-3">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                <div class="card  grid gap-2 grid-cols-3 mt-14">
+                    <div class="box cursor-pointer border rounded-lg  p-4 text-center ">
+                        <img class="w-6 mx-auto" src="./assets/wallet1.png" alt="">
+                        <h3>Add money</h3>
+                    </div>
+                    <div class="box cursor-pointer border rounded-lg  p-4 text-center ">
+                        <img class="w-6 mx-auto" src="./assets/wallet1.png" alt="">
+                        <h3>Cashout</h3>
+                    </div>
+                    <div class="box cursor-pointer border rounded-lg  p-4 text-center ">
+                        <img class="w-6 mx-auto" src="./assets/wallet1.png" alt="">
+                        <h3>Transfer Money</h3>
+                    </div>
+                    <div class="box cursor-pointer border rounded-lg  p-4 text-center ">
+                        <img class="w-6 mx-auto" src="./assets/wallet1.png" alt="">
+                        <h3>Get Bonus</h3>
+                    </div>
+                    <div class="box cursor-pointer border rounded-lg  p-4 text-center ">
+                        <img class="w-6 mx-auto" src="./assets/wallet1.png" alt="">
+                        <h3>Pay Bill</h3>
+                    </div>
+                    <div class="box cursor-pointer border rounded-lg p-4 text-center ">
+                        <img class="w-6 mx-auto" src="./assets/wallet1.png" alt="">
+                        <h3>Transactions</h3>
+                    </div>
+
+                </div>
+                <section>
+                    <h1 class="ml-3 text-3xl font-semibold mt-8">Add Money</h1>
+                    <form class="card-body">
+                        <div class="form-control">
+                            <legend>Select Bank</legend>
+                            <select class="select bg-white text-black select-bordered w-full max-w-xs">
+                                <option disabled selected>Select Bank</option>
+                                <option>bKash</option>
+                                <option>Nagad</option>
+                                <option>Rocket</option>
+                                <option>UPAy</option>
+                            </select>
+
+                            <label class="label">
+                                <span class="label-text text-black">Bank Account Number</span>
+                            </label>
+                            <input  id="account-number" type="number" placeholder="Enter 11 Digit Account Number"
+                                class="bg-white text-black  input input-bordered" required />
+
+
+                            <label class="label">
+                                <span class="text-black label-text">Ammount To Add</span>
+                            </label>
+                            <input  id="pin" type="text" placeholder="Add Ammount To Withdraw"
+                                class=" bg-white text-black input input-bordered" required />
+                            <label class="label">
+                                <span class="text-black label-text">PIN Number</span>
+                            </label>
+                            <input  id="pin" type="text" placeholder="Enter 4 Digit PIN Number"
+                                class=" bg-white text-black input input-bordered" required />
+
+
+                            <div class="form-control mt-6">
+                                <button id="login-btn" class="btn btn-primary">Login</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </section>
+            </section>
+        </header>
+    </section>
+</body>
+
+</html>
